@@ -44,10 +44,10 @@ def stats(update, context):
 @run_async
 def start(update, context):
     start_string = f'''
-Hi, I'm Slam, a multipurpose bot for [hafitz](t.me/hafitzXD)
+Hi, I'm Neko, a multipurpose bot for [#USERNEKOPOI](https://t.me/November2k)
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
-    update.effective_message.reply_photo("https://telegra.ph/file/db03910496f06094f1f7a.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_photo("https://telegra.ph/file/4388e0e0cedcae0d6a96f.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
 
 
 @run_async
@@ -76,41 +76,41 @@ def log(update, context):
 @run_async
 def bot_help(update, context):
     help_string = f'''
-/{BotCommands.HelpCommand}: To get this message
+/{BotCommands.HelpCommand}: Untuk mendapatkan pesan ini 
 
-/{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to google drive
+/{BotCommands.MirrorCommand} [download_url][magnet_link]: Mulai mirror tautan ke Google Drive 
 
-/{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to google drive
+/{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Mulai mirror dan jika file yang diunduh adalah arsip apa pun, ekstrak ke drive Google 
 
-/{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
+/{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Mulai mirror dan unggah versi unduhan yang diarsipkan (.tar) 
 
-/{BotCommands.CloneCommand}: Copy file/folder to google drive
+/{BotCommands.CloneCommand}: Copy file/folder ke google drive
 
-/{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help.
+/{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror melalui youtube-dl. tekan /{BotCommands.WatchCommand} untuk bantuan.
 
-/{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
+/{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror melalui youtube-dl dan tar sebelum upload
 
-/{BotCommands.CancelMirror}: Reply to the message by which the download was initiated and that download will be cancelled
+/{BotCommands.CancelMirror}: Balas pesan yang digunakan untuk mengunduh dan unduhan itu akan dibatalkan 
 
-/{BotCommands.StatusCommand}: Shows a status of all the downloads
+/{BotCommands.StatusCommand}: Melihat status dari semua unduhan 
 
-/{BotCommands.ListCommand} [search term]: Searches the search term in the Google drive, if found replies with the link
+/{BotCommands.ListCommand} [search term]: Mencari list dri Google drive, jika ditemukan akan dibalas dengan tautan 
 
-/{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
+/{BotCommands.StatsCommand}: ampilkan Statistik mesin tempat bot dihosting 
 
-/{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
+/{BotCommands.AuthorizeCommand}: Otorisasi obrolan atau pengguna untuk menggunakan bot (Hanya dapat dieksekusi oleh #USERNEKOPOI) 
 
-/{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
+/{BotCommands.LogCommand}: Dapatkan file log dari bot. Berguna untuk mendapatkan laporan kerusakan bot atau crash
 
-/{BotCommands.SpeedCommand}: Check Internet Speed of the Host
+/{BotCommands.SpeedCommand}: Periksa Kecepatan Internet
 
-/{BotCommands.UsageCommand}: To see Heroku Dyno Stats (Owner only).
+/{BotCommands.UsageCommand}: Untuk melihat Heroku Dyno Stats ( hanya #USERNEKOPOI yang bisa menggunakan ini ) 
 
-/tshelp: Get help for torrent search module.
+/tshelp: Dapatkan bantuan untuk modul pencarian torrent. 
 
-/weebhelp: Get help for anime, manga and character module.
+/weebhelp: Dapatkan bantuan untuk modul anime, manga, dan karakter. 
 
-/stickerhelp: Get help for stickers module.
+/stickerhelp: Dapatkan bantuan untuk modul stiker. 
 '''
     sendMessage(help_string, context.bot, update)
 
